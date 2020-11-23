@@ -1,0 +1,201 @@
+#----------------------------Example00---------------------------------------------------------
+WIDTH = 320
+HEIGHT = 200
+RENDER_IMG = "Example00.ppm"
+CAMERA = Camera( Point(0,-0.35, -1), Vector(0, -1, 0), WIDTH, HEIGHT, -1, -1,1 )
+
+OBJECTS = [
+    Sphere(Point(0,10000.5,1), 10000.0, ChequeredMaterial()),
+    Sphere(Point(0.75,-0.1,2.25), 0.6,  Material( Color.from_hex("#0000FF") ) ),
+]
+
+LIGHTS = [ 
+    
+    
+    Light(Point(1.5,-.5,-10), Color.from_hex("#FFFFFF")),
+    Light(Point(-0.5,-10.5,-10), Color.from_hex("#E6E6E6"))
+
+]
+
+#----------------------------Example01---------------------------------------------------------
+
+WIDTH = 320
+HEIGHT = 200
+RENDER_IMG = "Example01.ppm"
+CAMERA = Camera( Point(0, 5, 2), Vector(0, -1, 0), WIDTH, HEIGHT, 0, -10,10 )
+
+OBJECTS = [
+
+    Sphere(Point(-3, 0, 4), 1.,  Material( Color.from_hex("#FF00FF") ) ),
+    Sphere(Point(0, 0, 2), 1.,  Material( Color.from_hex("#00FFFF") ) ),
+    Sphere(Point(3, 0, 0), 1.,  Material( Color.from_hex("#FFFF00") ) )
+
+]
+
+LIGHTS = [ 
+    
+    
+    Light(Point(1.5,-.5,-10), Color.from_hex("#FFFFFF")),
+    Light(Point(-0.5,-10.5,-10), Color.from_hex("#E6E6E6")),
+    Light(Point(1.5,-.5,10), Color.from_hex("#FFFFFF")),
+    Light(Point(-0.5,10.5,10), Color.from_hex("#E6E6E6"))
+
+]
+
+#----------------------------Example02---------------------------------------------------------
+WIDTH = 320
+HEIGHT = 200
+RENDER_IMG = "Example02.ppm"
+CAMERA = Camera( Point(0, 5, 2), Vector(0, -1, 0), WIDTH, HEIGHT, 0, -10,10 )
+
+OBJECTS = [
+    
+    Tore(1,2,  Material( Color.from_hex("#FF0000") ) )
+
+]
+
+LIGHTS = [ 
+    
+    
+    Light(Point(1.5,-.5,-10), Color.from_hex("#FFFFFF")),
+    Light(Point(-0.5,-10.5,-10), Color.from_hex("#E6E6E6")),
+    
+    Light(Point(1.5,-.5,10), Color.from_hex("#FFFFFF")),
+    Light(Point(-0.5,10.5,10), Color.from_hex("#E6E6E6"))
+
+]
+
+
+
+#----------------------------Example03---------------------------------------------------------
+WIDTH = 320
+HEIGHT = 200
+RENDER_IMG = "Example03.ppm"
+CAMERA = Camera( Point(0, 5, 2), Vector(0, -1, 0), WIDTH, HEIGHT, 0, -10,10 )
+
+OBJECTS = [
+    Steiner2(Material( Color.from_hex("#00FFFF") ))
+]
+
+LIGHTS = [ 
+    
+    
+    Light(Point(1.5,-.5,-10), Color.from_hex("#FFFFFF")),
+    Light(Point(-0.5,-10.5,-10), Color.from_hex("#E6E6E6")),
+    
+    Light(Point(1.5,-.5,10), Color.from_hex("#FFFFFF")),
+    Light(Point(-0.5,10.5,10), Color.from_hex("#E6E6E6"))
+
+]
+
+
+#----------------------------Example04---------------------------------------------------------
+WIDTH = 320
+HEIGHT = 200
+RENDER_IMG = "Example04.ppm"
+CAMERA = Camera( Point(0, 5, 2), Vector(0, -1, 0), WIDTH, HEIGHT, 0, -10,10 )
+
+OBJECTS = [
+    Steiner4(Material( Color.from_hex("#FF00FF") ))
+]
+
+LIGHTS = [ 
+    
+    
+    Light(Point(1.5,-.5,-10), Color.from_hex("#FFFFFF")),
+    Light(Point(-0.5,-10.5,-10), Color.from_hex("#E6E6E6")),
+    
+    #Light(Point(1.5,-.5,10), Color.from_hex("#FFFFFF")),
+    #Light(Point(-0.5,10.5,10), Color.from_hex("#E6E6E6"))
+
+]
+
+
+
+#----------------------------Example05---------------------------------------------------------
+
+WIDTH = 320
+HEIGHT = 200
+RENDER_IMG = "Example05.ppm"
+CAMERA = Camera( Point(0, 5, 2), Vector(0, -1, 0), WIDTH, HEIGHT, 0, -10,10 )
+
+OBJECTS = [
+    Hyperboloide_2nappes(Material( Color.from_hex("#00FFFF") ))
+]
+
+LIGHTS = [ 
+    
+    Light(Point(1.5,-.5,-10), Color.from_hex("#FFFFFF")),
+    Light(Point(-0.5,-10.5,-10), Color.from_hex("#E6E6E6")),
+    
+    Light(Point(1.5,-.5,10), Color.from_hex("#FFFFFF")),
+    #Light(Point(-0.5,10.5,10), Color.from_hex("#E6E6E6"))
+
+]
+
+
+#----------------------------Example06---------------------------------------------------------
+WIDTH = 320
+HEIGHT = 200
+RENDER_IMG = "Example06.ppm"
+CAMERA = Camera( Point(0, 5, 2), Vector(0, -1, 0), WIDTH, HEIGHT, 0, -10,10 )
+
+OBJECTS = [
+    Hyperboloide_1nappe(Material( Color.from_hex("#FFFF00") ))
+]
+
+LIGHTS = [ 
+    
+    
+    Light(Point(1.5,-.5,-10), Color.from_hex("#FFFFFF")),
+    Light(Point(-0.5,-10.5,-10), Color.from_hex("#E6E6E6")),
+    
+    Light(Point(1.5,-.5,10), Color.from_hex("#FFFFFF")),
+    #Light(Point(-0.5,10.5,10), Color.from_hex("#E6E6E6"))
+
+]
+
+
+
+#----------------------------Example07---------------------------------------------------------
+WIDTH = 320
+HEIGHT = 200
+RENDER_IMG = "Example07.ppm"
+CAMERA = Camera( Point(0, 5, 2), Vector(0, -1, 0), WIDTH, HEIGHT, 0, -10,10 )
+
+OBJECTS = [
+    Roman(Material( Color.from_hex("#32CCCC") ))
+]
+
+LIGHTS = [ 
+    
+    
+    Light(Point(1.5,-.5,-10), Color.from_hex("#FFFFFF")),
+    Light(Point(-0.5,-10.5,-10), Color.from_hex("#E6E6E6")),
+    
+    Light(Point(1.5,-.5,10), Color.from_hex("#FFFFFF")),
+    #Light(Point(-0.5,10.5,10), Color.from_hex("#E6E6E6"))
+
+]
+
+
+#----------------------------Example08---------------------------------------------------------
+WIDTH = 320
+HEIGHT = 200
+RENDER_IMG = "Example08.ppm"
+CAMERA = Camera( Point(0,-0.35, -1), Vector(0, -1, 0), WIDTH, HEIGHT, -1, -1,1 )
+
+OBJECTS = [
+    Roman(Material( Color.from_hex("#32CCCC") ))
+]
+
+LIGHTS = [ 
+    
+    
+    Light(Point(1.5,-.5,-10), Color.from_hex("#FFFFFF")),
+    Light(Point(-0.5,-10.5,-10), Color.from_hex("#E6E6E6")),
+    
+    Light(Point(1.5,-.5,10), Color.from_hex("#FFFFFF")),
+    #Light(Point(-0.5,10.5,10), Color.from_hex("#E6E6E6"))
+
+]
